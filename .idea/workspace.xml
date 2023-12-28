@@ -15,7 +15,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bcf8a6-d5a8-423d-90a1-267e85194a57" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ph_sensor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ph_sensor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pio/build/due/.sconsign312.dblite" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/due/.sconsign312.dblite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pio/build/due/firmware.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/due/firmware.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pio/build/due/firmware.elf" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/due/firmware.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pio/build/project.checksum" beforeDir="false" afterPath="$PROJECT_DIR$/.pio/build/project.checksum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ph_sensor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SensorReader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ph_sensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/SensorReader.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ClangdSettings">
+    <option name="clangTidyViaClangd" value="false" />
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="due" />
@@ -84,6 +92,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/necronzero/Documents/smart_garden/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +102,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -111,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703729301461</updated>
-      <workItem from="1703729302485" duration="5334000" />
+      <workItem from="1703729302485" duration="8060000" />
     </task>
     <servers />
   </component>

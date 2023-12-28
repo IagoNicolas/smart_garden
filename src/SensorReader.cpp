@@ -1,4 +1,4 @@
-#include "ph_sensor.h"
+#include "SensorReader.h"
 #include <Arduino.h>
 
 /**
@@ -84,4 +84,39 @@ double getPhValue() {
     double phConverted = -5.70 * volt + CALIBRATION_VALUE;
 
     return phConverted;
+}
+
+/**
+ * @brief Reads temperature and TDS (Total Dissolved Solids) values from Serial3.
+ *
+ * This function reads a message from the Serial3 port, extracts temperature and TDS
+ * values, and returns them as a std::pair<float, int>.
+ *
+ * @note Connect the sensor as follows:\n TX -> TX3\n 5V -> VCC\n GND -> GND.
+ *
+ * @return A std::pair containing temperature and TDS values.
+ *         The first element is the temperature as a float.
+ *         The second element is the TDS as an integer.
+ */
+std::pair<float, int> getTempTdsValue() {
+    float temp = 0.0;
+    int tds = 0;
+
+    if (Serial3.available() > 0) {
+        String msg = Serial3.readStringUntil('\n');
+
+        // Find the index of the colon character
+        int colonIndex = msg.indexOf(':');
+
+        // Check if the colon character is found
+        if (colonIndex != -1) {
+            // Extract the first part as temperature (convert to float)
+            temp = msg.substring(0, colonIndex).toFloat();
+
+            // Extract the second part as TDS (convert to integer)
+            tds = msg.substring(colonIndex + 1).toInt();
+        }
+    }
+
+    return std::make_pair(temp, tds);
 }
