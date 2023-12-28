@@ -57,6 +57,8 @@ void bubbleSort(uint32_t arr[], int n) {
  * the average within specified bounds, converts the average voltage to pH,
  * and returns the pH value.
  *
+ * @note Connect the sensor as follows:\n PO -> A0\n 5V -> VCC\n GND -> GND.
+ *
  * @return The pH value.
  */
 double getPhValue() {
